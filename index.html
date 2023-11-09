@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+		<div id="logo">
+			<img src="imagens/LogoCasa.png" alt="logo casa">
+		</div>
+
+		<button id="switch" onclick="toggleMode()">
+			<svg class="moon-stars" width="34" height="34" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M13.5 7V4" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M15 5.5H12" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M10.5 1.5V3.5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M11.5 2.5H9.5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M13.5436 9.53752C12.5619 9.8128 11.5247 9.82182 10.5384 9.56366C9.55205 9.3055 8.65223 8.78946 7.93131 8.06854C7.21039 7.34762 6.69436 6.4478 6.43619 5.46149C6.17803 4.47519 6.18706 3.43794 6.46233 2.45627C5.4945 2.72565 4.61413 3.24391 3.90892 3.95941C3.20371 4.67492 2.69827 5.56271 2.44295 6.53435C2.18763 7.50599 2.19133 8.52756 2.45369 9.49732C2.71605 10.4671 3.22791 11.3512 3.93829 12.0616C4.64866 12.7719 5.53276 13.2838 6.50253 13.5462C7.47229 13.8085 8.49387 13.8122 9.4655 13.5569C10.4371 13.3016 11.3249 12.7961 12.0404 12.0909C12.7559 11.3857 13.2742 10.5054 13.5436 9.53752Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+
+			<svg class="sun hide" width="34" height="34" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M8 11.75C10.0711 11.75 11.75 10.0711 11.75 8C11.75 5.92893 10.0711 4.25 8 4.25C5.92893 4.25 4.25 5.92893 4.25 8C4.25 10.0711 5.92893 11.75 8 11.75Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M8 2.25V1" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M3.93105 3.93127L3.0498 3.05002" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M2.25 8H1" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M3.93105 12.0688L3.0498 12.95" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M8 13.75V15" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M12.0688 12.0688L12.9501 12.95" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M13.75 8H15" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M12.0688 3.93127L12.9501 3.05002" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			<span id="theme-color">Dark Mode</span>
+		</button>
+	
+		<nav>
+			<a href="#">Página Inicial</a>
+			<a href="#">Currículos</a>
+			<a href="#">Vagas</a>
+		</nav>
+  </header>
+
+	<form id="my-form" action="" method="">
+		<div class="title">
+			<h1>Novo Cadastro</h1>
+		</div>
+
+		<fieldset class="first-form">
+			<legend>Dados Pessoais</legend>
+
+			<div class="info-person">
+				<div class="boxes">
+					<label for="first-name">Nome</label>
+					<input type="text" name="nome" id="first-name" />
+				</div>
+	
+				<div class="boxes">
+					<label for="last-name">Sobrenome</label>
+					<input type="text" name="sobrenome" id="last-name" />
+				</div>
+			</div>
+
+			<div class="info-person">
+				<div class="boxes">
+					<label for="document-rg">RG <span>(somente números)</span></label>
+					<input type="number" name="" id="document-rg" placeholder="XX.XXX.XXX - X" required />
+				</div>
+
+				<div class="boxes">
+					<label for="cpf">CPF <span>(somente números)</span></label>
+					<input type="text" name="" id="cpf" placeholder="XXX.XXX.XXX - XX" required />
+				</div>
+			</div>
+
+			<div class="info-person">
+					<div class="boxes">
+						<label for="date-birthday">Data de Nascimento <span>(DD/MM/AAAA)</span></label>
+						<input type="date" name="" id="date-birthday" />
+					</div>
+
+					<div class="boxes">
+						<label for="nacionality">País de Origem <span>(nacionalidade)</span></label>
+						<input type="text" name="" id="nacionality" />
+					</div>
+
+					<div class="boxes">
+						<label for="gender">Gênero</label>
+						<select id="gender">
+							<option value="masculino">Masculino</option>
+							<option value="feminino">Feminino</option>
+							<option value="outro">Outro</option>
+						</select>
+					</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="second-form">
+			<legend>Contato</legend>
+
+			<div class="info-contact">
+				<div class="boxes">
+					<label for="phone-number">Telefone</label>
+					<input type="tel" name="" id="phone-number" placeholder="(XX) 1234-5678" required />
+				</div>
+	
+				<div class="boxes">
+					<label for="cellphone">Celular</label>
+					<input type="tel" name="" id="cellphone" placeholder="(XX) 9 1234-5678" required />
+				</div>
+
+				<div class="boxes">
+					<label for="email">Endereço de E-mail</label>
+					<input type="email" name="" id="email" placeholder="exemplo@exemplo.com" required/>
+				</div>
+			</div>
+
+			<div class="info-contact">
+				<div class="boxes">
+					<label for="site">Site <span>(comece com https://)</span></label>
+					<input type="url" name="" id="site" />
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="third-form">
+			<legend>Endereço</legend>
+
+			<div class="info-address">
+				<div class="boxes">
+					<label for="street">Rua</span></label>
+					<input type="text" name="" id="street" />
+				</div>
+					
+				<div class="boxes">
+					<label for="num">Número</label>                                
+					<input type="number" name="" id="num" required />
+				</div>
+
+				<div class="boxes">
+					<label for="logradouro">Logradouro</label>
+					<input type="text" name="" id="logradouro" />
+				</div>
+
+				<div class="boxes">
+					<label for="cep">CEP <Span>(código postal)</span></label>
+					<input type="number" name="" id="cep" required />
+				</div>
+			</div>
+
+			<div class="info-address">		
+				<div class="boxes">
+					<label for="complement">Complemento</label>
+					<input type="text" name="" id="complement" />
+				</div>
+
+				<div class="boxes">
+					<label for="district">Bairro</label>
+					<input type="text" name="" id="district" />
+				</div>
+
+				<div class="boxes">
+					<label for="city">Cidade</label>
+					<input type="text" name="" id="city" />
+				</div>
+
+				<div class="boxes">
+					<label for="region">Estado</label>
+					<select name="" id="region">
+						<option value="AC">AC</option>
+						<option value="AL">AL</option>
+						<option value="AP">AP</option>
+						<option value="AM">AM</option>
+						<option value="BA">BA</option>
+						<option value="CE">CE</option>
+						<option value="DF">DF</option>
+						<option value="ES">ES</option>
+						<option value="GO">GO</option>
+						<option value="MA">MA</option>
+						<option value="MS">MS</option>
+						<option value="MT">MT</option>
+						<option value="MG">MG</option>
+						<option value="PA">PA</option>
+						<option value="PB">PB</option>
+						<option value="PR">PR</option>
+						<option value="PE">PE</option>
+						<option value="PI">PI</option>
+						<option value="RJ">RJ</option>
+						<option value="RN">RN</option>
+						<option value="RS">RS</option>
+						<option value="RO">RO</option>
+						<option value="RR">RR</option>
+						<option value="SC">SC</option>
+						<option value="SP">SP</option>
+						<option value="SE">SE</option>
+						<option value="TO">TO</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="fourth-form">
+			<legend>Formação</legend>
+
+			<div class="info-education">
+				<div class="boxes">
+					<label for="school">Curso</label>
+					<input type="text" name="" id="school" />
+				</div>
+					
+				<div class="boxes">
+					<label for="nivel">Nível</label>
+					<select name="" id="nivel">
+						<option value="ensino-fundamental">Ensino Fundamental</option>
+						<option value="ensino-medio-normal">Ensino Médio-Normal</option>
+						<option value="ensino-medio-tecnico">Ensino Médio-Técnico</option>
+						<option value="ensino-superior">Ensino Superior</option>
+						<option value="pos-graduacao-especializacao">Pós-Graduação Especialização</option>
+						<option value="pos-graduacao-mestrado">Pós-Graduação Mestrado</option>
+						<option value="doutorado">Doutorado</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="info-education">
+				<div class="boxes">
+					<label for="institute">Instituição de Ensino</label>
+					<input type="text" name="" id="institute" />
+				</div>
+
+				<div class="boxes">
+					<label for="opening">Início <span>(DD/MM/AAAA)</span></label>
+					<input type="date" name="" id="opening" />
+				</div>
+
+				<div class="boxes">
+					<label for="conclusion">Conclusão <span>(DD/MM/AAAA)</span></label>
+					<input type="date" name="" id="conclusion" />
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="fifth-form">
+			<legend>Experiência Profissional</legend>
+
+			<div class="info-jobs">
+				<div class="boxes">
+					<label for="company-name">Nome da Empresa</label>
+					<input type="text" name="" id="company-name" />
+				</div>
+					
+				<div class="boxes">
+					<label for="responsibility">Cargo</label>
+					<input type="text" name="" id="responsibility" />
+				</div>
+			</div>
+
+			<div class="info-jobs">
+				<div class="boxes">
+					<label for="started">Início</label>
+					<input type="date" name="" id="started" />
+				</div>
+
+				<div class="boxes">
+					<label for="ending">Término</label>
+					<input type="date" id="ending" />
+				</div>
+			</div>
+
+			<div class="info-jobs">
+				<div class="boxes">
+					<label for="description">Descrição das funções</label>
+					<textarea name="" id="description" cols="60" rows="10"></textarea>
+				</div>
+			</div>
+
+			<div class="info-confirm">
+				<input type="checkbox" id="confirm" />
+				<label for="confirm">Confirmo que todos os dados fornecidos são verdadeiros</label>
+			</div>
+		</fieldset>		
+	</form>
+
+	<footer>
+		<input class="button-submit" form="my-form" type="submit" value="Enviar Currículo" />
+		<input class="button-reset" form="my-form" type="reset" value="Apagar Tudo" />
+	</footer>     
+	<script src="main.js"></script> 
+</body>
+</html>
