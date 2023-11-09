@@ -48,7 +48,7 @@
 		</nav>
   </header>
 
-	<form id="my-form" action="" method="">
+	<form id="my-form" action="" method="" data-formulario>
 		<div class="title">
 			<h1>Novo Cadastro</h1>
 		</div>
@@ -59,41 +59,41 @@
 			<div class="info-person">
 				<div class="boxes">
 					<label for="first-name">Nome</label>
-					<input type="text" name="nome" id="first-name" />
+					<input type="text" name="nome" id="first-name" data-nome/>
 				</div>
 	
 				<div class="boxes">
 					<label for="last-name">Sobrenome</label>
-					<input type="text" name="sobrenome" id="last-name" />
+					<input type="text" name="sobrenome" id="last-name" data-sobrenome/>
 				</div>
 			</div>
 
 			<div class="info-person">
 				<div class="boxes">
 					<label for="document-rg">RG <span>(somente números)</span></label>
-					<input type="number" name="" id="document-rg" placeholder="XX.XXX.XXX - X" required />
+					<input type="number" name="" id="document-rg" placeholder="XX.XXX.XXX - X" required data-rg/>
 				</div>
 
 				<div class="boxes">
 					<label for="cpf">CPF <span>(somente números)</span></label>
-					<input type="text" name="" id="cpf" placeholder="XXX.XXX.XXX - XX" required />
+					<input type="text" name="" id="cpf" placeholder="XXX.XXX.XXX - XX" required data-cpf/>
 				</div>
 			</div>
 
 			<div class="info-person">
 					<div class="boxes">
 						<label for="date-birthday">Data de Nascimento <span>(DD/MM/AAAA)</span></label>
-						<input type="date" name="" id="date-birthday" />
+						<input type="date" name="" id="date-birthday" data-nascimento/>
 					</div>
 
 					<div class="boxes">
 						<label for="nacionality">País de Origem <span>(nacionalidade)</span></label>
-						<input type="text" name="" id="nacionality" />
+						<input type="text" name="" id="nacionality" data-nacionalidade/>
 					</div>
 
 					<div class="boxes">
 						<label for="gender">Gênero</label>
-						<select id="gender">
+						<select id="gender" data-genero>
 							<option value="masculino">Masculino</option>
 							<option value="feminino">Feminino</option>
 							<option value="outro">Outro</option>
@@ -108,72 +108,72 @@
 			<div class="info-contact">
 				<div class="boxes">
 					<label for="phone-number">Telefone</label>
-					<input type="tel" name="" id="phone-number" placeholder="(XX) 1234-5678" required />
+					<input type="tel" name="" id="phone-number" placeholder="(XX) 1234-5678" required data-input-mask="(99)99999999" data-telefone/>
 				</div>
 	
 				<div class="boxes">
 					<label for="cellphone">Celular</label>
-					<input type="tel" name="" id="cellphone" placeholder="(XX) 9 1234-5678" required />
+					<input type="tel" name="" id="cellphone" placeholder="(XX) 9 1234-5678" required data-input-mask="(99)999999999" data-celular/>
 				</div>
 
 				<div class="boxes">
 					<label for="email">Endereço de E-mail</label>
-					<input type="email" name="" id="email" placeholder="exemplo@exemplo.com" required/>
+					<input type="email" name="" id="email" placeholder="exemplo@exemplo.com" required data-email/>
 				</div>
 			</div>
 
 			<div class="info-contact">
 				<div class="boxes">
 					<label for="site">Site <span>(comece com https://)</span></label>
-					<input type="url" name="" id="site" />
+					<input type="url" name="" id="site" data-site/>
 				</div>
 			</div>
 		</fieldset>
 
-		<fieldset class="third-form">
+		<fieldset class="third-form" data-form-endereco>
 			<legend>Endereço</legend>
 
 			<div class="info-address">
 				<div class="boxes">
 					<label for="street">Rua</span></label>
-					<input type="text" name="" id="street" />
+					<input type="text" name="" id="street" data-rua/>
 				</div>
 					
 				<div class="boxes">
 					<label for="num">Número</label>                                
-					<input type="number" name="" id="num" required />
+					<input type="number" name="" id="num" required data-numero/>
 				</div>
 
 				<div class="boxes">
 					<label for="logradouro">Logradouro</label>
-					<input type="text" name="" id="logradouro" />
+					<input type="text" name="" id="logradouro" data-logradouro/>
 				</div>
 
 				<div class="boxes">
 					<label for="cep">CEP <Span>(código postal)</span></label>
-					<input type="number" name="" id="cep" required />
+					<input type="number" name="" id="cep" required data-input-mask="99999-999" data-cep/>
 				</div>
 			</div>
 
 			<div class="info-address">		
 				<div class="boxes">
 					<label for="complement">Complemento</label>
-					<input type="text" name="" id="complement" />
+					<input type="text" name="" id="complement" data-complemento/>
 				</div>
 
 				<div class="boxes">
 					<label for="district">Bairro</label>
-					<input type="text" name="" id="district" />
+					<input type="text" name="" id="district" data-bairro/>
 				</div>
 
 				<div class="boxes">
 					<label for="city">Cidade</label>
-					<input type="text" name="" id="city" />
+					<input type="text" name="" id="city" data-cidade/>
 				</div>
 
 				<div class="boxes">
 					<label for="region">Estado</label>
-					<select name="" id="region">
+					<select name="" id="region" data-estado>
 						<option value="AC">AC</option>
 						<option value="AL">AL</option>
 						<option value="AP">AP</option>
@@ -212,12 +212,12 @@
 			<div class="info-education">
 				<div class="boxes">
 					<label for="school">Curso</label>
-					<input type="text" name="" id="school" />
+					<input type="text" name="" id="school" data-curso/>
 				</div>
 					
 				<div class="boxes">
 					<label for="nivel">Nível</label>
-					<select name="" id="nivel">
+					<select name="" id="nivel" data-nivel>
 						<option value="ensino-fundamental">Ensino Fundamental</option>
 						<option value="ensino-medio-normal">Ensino Médio-Normal</option>
 						<option value="ensino-medio-tecnico">Ensino Médio-Técnico</option>
@@ -232,17 +232,17 @@
 			<div class="info-education">
 				<div class="boxes">
 					<label for="institute">Instituição de Ensino</label>
-					<input type="text" name="" id="institute" />
+					<input type="text" name="" id="institute" data-instituicao/>
 				</div>
 
 				<div class="boxes">
 					<label for="opening">Início <span>(DD/MM/AAAA)</span></label>
-					<input type="date" name="" id="opening" />
+					<input type="date" name="" id="opening" data-dataInicio/>
 				</div>
 
 				<div class="boxes">
 					<label for="conclusion">Conclusão <span>(DD/MM/AAAA)</span></label>
-					<input type="date" name="" id="conclusion" />
+					<input type="date" name="" id="conclusion" data-dataConclusao/>
 				</div>
 			</div>
 		</fieldset>
@@ -253,31 +253,31 @@
 			<div class="info-jobs">
 				<div class="boxes">
 					<label for="company-name">Nome da Empresa</label>
-					<input type="text" name="" id="company-name" />
+					<input type="text" name="" id="company-name" data-empresa/>
 				</div>
 					
 				<div class="boxes">
 					<label for="responsibility">Cargo</label>
-					<input type="text" name="" id="responsibility" />
+					<input type="text" name="" id="responsibility" data-cargo/>
 				</div>
 			</div>
 
 			<div class="info-jobs">
 				<div class="boxes">
 					<label for="started">Início</label>
-					<input type="date" name="" id="started" />
+					<input type="date" name="" id="started" data-inicio/>
 				</div>
 
 				<div class="boxes">
 					<label for="ending">Término</label>
-					<input type="date" id="ending" />
+					<input type="date" id="ending" data-fim/>
 				</div>
 			</div>
 
 			<div class="info-jobs">
 				<div class="boxes">
 					<label for="description">Descrição das funções</label>
-					<textarea name="" id="description" cols="60" rows="10"></textarea>
+					<textarea name="" id="description" cols="60" rows="10" data-descricao></textarea>
 				</div>
 			</div>
 
